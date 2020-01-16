@@ -1,5 +1,5 @@
 # es-theme-SuperCarbon
-Fork de Carbon theme original de retropie, adaptado y vitaminado para Batocera !
+Fork de Carbon theme original de retropie, adaptado y vitaminado para Batocera 5.25 y superiores!
 
 
 Theme 'carbon' v2.4 - 08-16-2016 by Rookervik
