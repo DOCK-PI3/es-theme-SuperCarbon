@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <baseColor>ffc2e5</baseColor>
+	<primaryColorMenu>e99zab</primaryColorMenu>
+	<secundaryColorMenu>f5756c</secundaryColorMenu>
+	<ColorSeleccionMenu>ff4f81</ColorSeleccionMenu>
+	<ColordelSelectorMenu>4d5255</ColordelSelectorMenu>
+	<pauseColorIconos>d0006f</pauseColorIconos>
+    <pauseColorTexto>f7c8c9</pauseColorTexto>
+	<menucolorfondo>e9e9e9</menucolorfondo>
+    <gradientEndColor>f0537a</gradientEndColor>
+    <centerFadeColor>e990abff</centerFadeColor>
+    <bottomBarColor>e99zab</bottomBarColor>
+	<glowColor>15717118</glowColor>
+    <systemInfoColor>FFFAFAFF</systemInfoColor>
+    <backgroundColor>f4979c</backgroundColor>
+  </variables>
+</theme>

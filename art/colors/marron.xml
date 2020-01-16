@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <baseColor>b06010</baseColor>
+	<primaryColorMenu>34c950</primaryColorMenu>
+	<secundaryColorMenu>f8971d</secundaryColorMenu>
+	<ColorSeleccionMenu>000000</ColorSeleccionMenu>
+	<ColordelSelectorMenu>dde2e0</ColordelSelectorMenu>
+    <gradientEndColor>865200</gradientEndColor>
+    <centerFadeColor>663300</centerFadeColor>
+    <bottomBarColor>663100</bottomBarColor>
+	<glowColor>15717118</glowColor>
+    <systemInfoColor>FFFAFAB0</systemInfoColor>
+    <backgroundColor>052020</backgroundColor>
+  </variables>
+</theme>
