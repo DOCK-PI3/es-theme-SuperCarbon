@@ -3,6 +3,7 @@
   <formatVersion>7</formatVersion>
   <variables>
     <baseColor>e95814</baseColor>
+	<colorHora>fc3d39</colorHora>
 	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
 	<ColorSeleccionMenu>a71930</ColorSeleccionMenu>
 	<primaryColorMenu>ffffff</primaryColorMenu>
@@ -13,15 +14,15 @@
     <pauseColorTexto>e5a00d</pauseColorTexto>
 	<!-- COLORES MENU START Y SELECT: FONDO ,TEXTO ,TEXTO SELECCIONADO ,SELECTOR ,DEGRADADO GENERAL ,SEPARADOR ,TITULO DEL MENU -->
 	<menucolorfondo>ffdc80</menucolorfondo>
-	<menucolortexto>cf202e</menucolortexto>
+	<menucolortexto>4d4f53</menucolortexto>
 	<menucolortextoselecionado>666666</menucolortextoselecionado>
 	<gradientEndColor>ff8200</gradientEndColor>
     <glowColor>e9581420</glowColor>
 	<menucolorseparador>dc380f</menucolorseparador>
-	<menucolortitulo>cc3333</menucolortitulo>
+	<menucolortitulo>ff6a00</menucolortitulo>
 	<!-- <centerFadeColor>8b000050</centerFadeColor> -->
     <backgroundColor>ed812b</backgroundColor>
     <bottomBarColor>8b0000</bottomBarColor>
-    <systemInfoColor>e50914</systemInfoColor>
+    <systemInfoColor>e5a00d</systemInfoColor>
   </variables>
 </theme>

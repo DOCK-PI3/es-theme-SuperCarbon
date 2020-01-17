@@ -3,6 +3,7 @@
   <formatVersion>7</formatVersion>
   <variables>
     <baseColor>7dba00</baseColor>
+	<colorHora>94ce08</colorHora>
     <gradientEndColor>99cc99</gradientEndColor>
     <centerFadeColor>9fbb58ff</centerFadeColor>
 	<ColordelSelectorMenu>bff199</ColordelSelectorMenu>

@@ -3,6 +3,7 @@
   <formatVersion>7</formatVersion>
   <variables>
     <baseColor>ffc2e5</baseColor>
+	<colorHora>ed6498</colorHora>
 	<primaryColorMenu>e99zab</primaryColorMenu>
 	<secundaryColorMenu>f5756c</secundaryColorMenu>
 	<ColorSeleccionMenu>ff4f81</ColorSeleccionMenu>
@@ -12,7 +13,7 @@
 	<menucolorfondo>e9e9e9</menucolorfondo>
     <gradientEndColor>f0537a</gradientEndColor>
     <centerFadeColor>e990abff</centerFadeColor>
-    <bottomBarColor>e99zab</bottomBarColor>
+    <bottomBarColor>f784b6</bottomBarColor>
 	<glowColor>15717118</glowColor>
     <systemInfoColor>FFFAFAFF</systemInfoColor>
     <backgroundColor>f4979c</backgroundColor>

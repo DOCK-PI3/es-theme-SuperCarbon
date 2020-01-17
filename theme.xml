@@ -34,8 +34,10 @@ originally based on: "simple" by nils bonenberger
     <backgroundColor>252525</backgroundColor>
     <bottomBarColor>8b0000c0</bottomBarColor>
     <systemInfoColor>DDDDDDD8</systemInfoColor>
+	<colorHora>FFFFFF</colorHora>
     <backgroundImage>./art/fiber.png</backgroundImage>
 	<backgroundImage_B>./art/fondo_2.png</backgroundImage_B>
+	<mconsolaswheel>0.5 0.5</mconsolaswheel>
     <tilesViewName>Tiles</tilesViewName>
 	<detailedViewName>Detailed</detailedViewName>
     <roundBorderSubsetName>Round borders</roundBorderSubsetName>
@@ -130,7 +132,7 @@ originally based on: "simple" by nils bonenberger
       <size>1 1</size>
       <pos>0 0</pos>
       <origin>0 0</origin>
-      <path>${backgroundImage}</path>      
+      <path>${backgroundImage_B}</path>      
       <color>${backgroundColor}</color>
       <zIndex>10</zIndex>
     </image>
@@ -169,7 +171,7 @@ originally based on: "simple" by nils bonenberger
     <image name="ControllerOverlay" extra="true">
       <tile>false</tile>
       <pos>0.5 0.19</pos>
-      <origin>0.5 0.5</origin>
+      <origin>${mconsolaswheel}</origin>
       <size>0.3 0</size>
       <path>./art/splash.svg</path>
       <path>./art/controllers/${system.theme}.svg</path>
@@ -191,6 +193,7 @@ originally based on: "simple" by nils bonenberger
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
     <include name="mini-consoles">./art/systemsbk/consoles.xml</include>
+	<include name="mini-consoles-mabedeep-wheel">./art/systemsbk/consoles-mabedeep-wheel.xml</include>
     <include name="consoles">./art/systemsbk/batomachines.xml</include>
     <include name="carbon controllers"/>
     <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
@@ -207,14 +210,14 @@ originally based on: "simple" by nils bonenberger
   <include subset="systemview" name="vertical">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="wheel">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="MOD Noromu Wheel">./art/systemview/controllersizefix.xml</include>
-  <include subset="systemview" name="Mabedeep Wheel v.1">./art/systemview/controllersizefix.xml</include>
+  <include subset="systemview" name="Mabedeep Wheel v.1">./art/systemview/controllersizefix-wheel-mabedeep.xml</include>
 
   <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
   <include subset="systemview" name="legacy">./art/systemview/legacyfix.xml</include>
 
   <view name="screen">
     <text name="clock">
-      <textColor>777777FF</textColor>
+      <textColor>${colorHora}</textColor>
       <fontSize>0.025</fontSize>
       <pos>0.905 0.951</pos>
       <size>0.05 0.031</size>
@@ -255,7 +258,7 @@ originally based on: "simple" by nils bonenberger
     <menuTextSmall name="menutextsmall">
       <fontPath>./art/Cabin-Regular.ttf</fontPath>
       <fontSize>0.02</fontSize>
-      <color>909090FF</color>
+      <color>${menucolortitulo}</color>
     </menuTextSmall>
     <menuBackground name="menubg">
       <color>${menucolorfondo}</color>
