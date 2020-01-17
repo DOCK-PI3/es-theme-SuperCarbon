@@ -98,6 +98,7 @@ originally based on: "simple" by nils bonenberger
   <include subset="colorset" name="cuarentena" displayName="${cuarentena}">./art/colors/cuarentena.xml</include>
   <include subset="colorset" name="españa" displayName="${españa}">./art/colors/españa.xml</include>
   <include subset="colorset" name="marron" displayName="${marron}">./art/colors/marron.xml</include>
+  <include subset="colorset" name="mason" displayName="${mason}">./art/colors/mason.xml</include>
   <include subset="colorset" name="rosachicle" displayName="${rosachicle}">./art/colors/rosachicle.xml</include>
   <include subset="colorset" name="verdelimon" displayName="${verdelimon}">./art/colors/verdelimon.xml</include>
 
