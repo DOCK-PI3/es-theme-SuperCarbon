@@ -3,11 +3,18 @@
   <formatVersion>7</formatVersion>
   <variables>
     <baseColor>ffac25</baseColor>
+	<menucolorfondo>ce181e</menucolorfondo>
+	<menucolortexto>fbbc05</menucolortexto>
     <gradientEndColor>e21737</gradientEndColor>
     <centerFadeColor>ffac250f</centerFadeColor>
-    <bottomBarColor>e21737ff</bottomBarColor>
-	    <glowColor>15717118</glowColor>
-    <systemInfoColor>FFFAFAB0</systemInfoColor>
-    <backgroundColor>db0011</backgroundColor>
+    <bottomBarColor>ffac25</bottomBarColor>
+	<glowColor>15717118</glowColor>
+    <systemInfoColor>ffed00</systemInfoColor>
+    <backgroundColor>d7d7d8</backgroundColor>
+	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
+	<ColorSeleccionMenu>ecb731</ColorSeleccionMenu>
+	<primaryColorMenu>ecb731</primaryColorMenu>
+	<secundaryColorMenu>ff9900</secundaryColorMenu>
+	<ColordelSelectorMenu>ed1b2e</ColordelSelectorMenu>
   </variables>
 </theme>

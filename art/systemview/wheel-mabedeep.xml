@@ -39,6 +39,13 @@
       <path>./../darkwheel.png</path>      
       <zIndex>12</zIndex>
     </image> -->
+   
+   
+   <image name="background" extra="static">
+      <path>${backgroundImage_C}</path>
+		<zIndex>11</zIndex>
+    </image>
+
 
     <text name="systemInfo">
       <pos>0.007 0.685</pos>

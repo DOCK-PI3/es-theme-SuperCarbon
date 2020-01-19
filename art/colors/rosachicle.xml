@@ -4,18 +4,19 @@
   <variables>
     <baseColor>ffc2e5</baseColor>
 	<colorHora>ed6498</colorHora>
-	<primaryColorMenu>e99zab</primaryColorMenu>
+	<primaryColorMenu>ee70a6</primaryColorMenu>
 	<secundaryColorMenu>f5756c</secundaryColorMenu>
 	<ColorSeleccionMenu>ff4f81</ColorSeleccionMenu>
 	<ColordelSelectorMenu>4d5255</ColordelSelectorMenu>
 	<pauseColorIconos>d0006f</pauseColorIconos>
     <pauseColorTexto>f7c8c9</pauseColorTexto>
-	<menucolorfondo>e9e9e9</menucolorfondo>
+	<menucolorfondo>e8e9d7</menucolorfondo>
+	<menucolortexto>ed6498</menucolortexto>
     <gradientEndColor>f0537a</gradientEndColor>
     <centerFadeColor>e990abff</centerFadeColor>
     <bottomBarColor>f784b6</bottomBarColor>
 	<glowColor>15717118</glowColor>
-    <systemInfoColor>FFFAFAFF</systemInfoColor>
+    <systemInfoColor>f54785</systemInfoColor>
     <backgroundColor>f4979c</backgroundColor>
   </variables>
 </theme>

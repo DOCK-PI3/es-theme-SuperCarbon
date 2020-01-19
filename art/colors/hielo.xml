@@ -9,12 +9,12 @@
 	<pauseColorIconos>14d4f4</pauseColorIconos>
     <pauseColorTexto>1cb0f6</pauseColorTexto>
 	<ColordelSelectorMenu>f0f0f0</ColordelSelectorMenu>
-	<menucolorfondo>a5cfd5</menucolorfondo>
+	<menucolorfondo>c6d6df</menucolorfondo>
     <gradientEndColor>dbebfa</gradientEndColor>
     <centerFadeColor>b3dcfff3</centerFadeColor>
     <bottomBarColor>79afc1</bottomBarColor>
     <glowColor>ced7df18</glowColor>
-    <systemInfoColor>8db9ca</systemInfoColor>
+    <systemInfoColor>006699</systemInfoColor>
     <backgroundColor>c1f1fc</backgroundColor>
   </variables>
 </theme>

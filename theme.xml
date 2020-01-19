@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Theme: SuperCarbon
-version: 1.0
+Sistema: Batocera
+Año: 2020
+version: 3.0
 NOTA: Tema vitaminado por Mabedeep de EmulOS Team.
 NOTA 2: Añadido Mod whell by Noromu
 Tema original: Carbon
@@ -37,6 +39,7 @@ originally based on: "simple" by nils bonenberger
 	<colorHora>FFFFFF</colorHora>
     <backgroundImage>./art/fiber.png</backgroundImage>
 	<backgroundImage_B>./art/fondo_2.png</backgroundImage_B>
+	<backgroundImage_C>./art/fiber-blanco.png</backgroundImage_C>
 	<mconsolaswheel>0.5 0.5</mconsolaswheel>
     <tilesViewName>Tiles</tilesViewName>
 	<detailedViewName>Detailed</detailedViewName>
