@@ -3,6 +3,8 @@
   <formatVersion>7</formatVersion>
   <variables>
     <baseColor>b06010</baseColor>
+	<menucolorfondo>4c261f</menucolorfondo>
+	<menucolortexto>c38974</menucolortexto>
 	<primaryColorMenu>34c950</primaryColorMenu>
 	<secundaryColorMenu>f8971d</secundaryColorMenu>
 	<ColorSeleccionMenu>000000</ColorSeleccionMenu>

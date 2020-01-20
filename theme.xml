@@ -90,13 +90,13 @@ originally based on: "simple" by nils bonenberger
     <subset.shader>Shader Efectos TV</subset.shader> 
   </variables>
   <!-- Subset options for color  -->
+    <include subset="colorset" name="hielo" displayName="${hielo}">./art/colors/hielo.xml</include>  
     <include subset="colorset" name="blue" displayName="${blue}">./art/colors/blue.xml</include>
     <include subset="colorset" name="red" displayName="${red}"/>
     <include subset="colorset" name="green" displayName="${green}">./art/colors/green.xml</include>
     <include subset="colorset" name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
     <include subset="colorset" name="violet" >./art/colors/violet.xml</include>
     <include subset="colorset" name="cyan" >./art/colors/cyan.xml</include>
-  <include subset="colorset" name="hielo" displayName="${hielo}">./art/colors/hielo.xml</include>
   <include subset="colorset" name="atardecer" displayName="${atardecer}">./art/colors/atardecer.xml</include>
   <include subset="colorset" name="cuarentena" displayName="${cuarentena}">./art/colors/cuarentena.xml</include>
   <include subset="colorset" name="españa" displayName="${españa}">./art/colors/españa.xml</include>
@@ -185,14 +185,15 @@ originally based on: "simple" by nils bonenberger
   </view>
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
+    <include name="Mabedeep Wheel v.1">./art/systemview/wheel-mabedeep.xml</include>
     <include name="horizontal">./art/systemview/horizontal.xml</include>
     <include name="legacy">./art/systemview/legacy.xml</include>
     <include name="transparent">./art/systemview/transparent.xml</include>
     <include name="simple">./art/systemview/verticalone.xml</include>
     <include name="vertical">./art/systemview/vertical.xml</include>
     <include name="wheel">./art/systemview/wheel.xml</include>
-	<include name="MOD Noromu Wheel">./art/systemview/wheel-noromu.xml</include>
-	<include name="Mabedeep Wheel v.1">./art/systemview/wheel-mabedeep.xml</include>
+	<include name="Mabedeep Wheel v.2">./art/systemview/wheel-mabedeep2.xml</include>
+	
   </subset>
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
@@ -213,7 +214,7 @@ originally based on: "simple" by nils bonenberger
   <include subset="systemview" name="simple">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="vertical">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="wheel">./art/systemview/controllersizefix.xml</include>
-  <include subset="systemview" name="MOD Noromu Wheel">./art/systemview/controllersizefix.xml</include>
+  <include subset="systemview" name="Mabedeep Wheel v.2">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="Mabedeep Wheel v.1">./art/systemview/controllersizefix-wheel-mabedeep.xml</include>
 
   <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
@@ -675,9 +676,9 @@ originally based on: "simple" by nils bonenberger
 
   <!-- Subset options for screen -->
   <subset name="shader" displayName="${subset.shader}">
-    <include name="None" displayName="${none}"/>
-    <include name="ScanLines">./art/scanlines.xml</include>
     <include name="Crt">./art/crt.xml</include>
+    <include name="ScanLines">./art/scanlines.xml</include>
+    <include name="None" displayName="${none}"/>
   </subset>
 
   <!-- Specific layout for systems -->
@@ -700,12 +701,12 @@ originally based on: "simple" by nils bonenberger
     <include name="horizontal">./art/grid/scrollhorz.xml</include>
   </subset>
   <subset name="hideselection" displayName="${hideselectionSubsetName}" appliesTo="Boxes,grid">
-    <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./art/grid/hidesel.xml</include>
+    <include name="no" displayName="${no}"/>
   </subset>
   <subset name="previewbar" displayName="${previewBarSubsetName}" appliesTo="Tiles,Carousel,Boxes,grid">
-    <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./art/grid/previewbar.xml</include>
+    <include name="no" displayName="${no}"/>
   </subset>
   <!-- Subset options for Tiles view -->
   <subset name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles">

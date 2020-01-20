@@ -10,6 +10,7 @@
     <pauseColorTexto>1cb0f6</pauseColorTexto>
 	<ColordelSelectorMenu>f0f0f0</ColordelSelectorMenu>
 	<menucolorfondo>c6d6df</menucolorfondo>
+	<menucolortexto>fffacd</menucolortexto>
     <gradientEndColor>dbebfa</gradientEndColor>
     <centerFadeColor>b3dcfff3</centerFadeColor>
     <bottomBarColor>79afc1</bottomBarColor>

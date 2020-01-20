@@ -2,12 +2,12 @@
 <theme>
   <formatVersion>7</formatVersion>
   <variables>
-    <baseColor>ffac25</baseColor>
+    <baseColor>e3342b</baseColor>
 	<menucolorfondo>ce181e</menucolorfondo>
 	<menucolortexto>fbbc05</menucolortexto>
     <gradientEndColor>e21737</gradientEndColor>
     <centerFadeColor>ffac250f</centerFadeColor>
-    <bottomBarColor>ffac25</bottomBarColor>
+    <bottomBarColor>e3342b</bottomBarColor>
 	<glowColor>15717118</glowColor>
     <systemInfoColor>ffed00</systemInfoColor>
     <backgroundColor>d7d7d8</backgroundColor>
