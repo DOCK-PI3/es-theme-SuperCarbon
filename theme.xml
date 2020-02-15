@@ -3,8 +3,8 @@
 Theme: SuperCarbon
 Sistema: Batocera
 Año: 2020
-version: 3.0
-NOTA: Tema vitaminado por Mabedeep de EmulOS Team.
+version: 4.3
+author: Mabedeep "DOCK-PI3" de EmulOS Team.
 NOTA 2: Añadido Mod whell by Noromu
 Tema original: Carbon
 version: 2.0
@@ -38,8 +38,14 @@ originally based on: "simple" by nils bonenberger
     <systemInfoColor>DDDDDDD8</systemInfoColor>
 	<colorHora>FFFFFF</colorHora>
     <backgroundImage>./art/fiber.png</backgroundImage>
+	<bgGamelistImage>./art/bgGamelists/</bgGamelistImage>
+	<bgVistaBasica>./art/bgbasicos/</bgVistaBasica>
 	<backgroundImage_B>./art/fondo_2.png</backgroundImage_B>
 	<backgroundImage_C>./art/fiber-blanco.png</backgroundImage_C>
+	<extraBorders>./art/extraborders/</extraBorders>
+	<headeranimado>./art/animados/header_bg.mp4</headeranimado>
+	<bganimado>./art/animados/fondo_DETALLE.mp4</bganimado>
+	<bganimadoBASICO>./art/animados/fondo_BASICO.mp4</bganimadoBASICO>
 	<mconsolaswheel>0.5 0.5</mconsolaswheel>
     <tilesViewName>Tiles</tilesViewName>
 	<detailedViewName>Detailed</detailedViewName>
@@ -59,7 +65,7 @@ originally based on: "simple" by nils bonenberger
   <!-- Español -->
   <variables lang="es">
     <tilesViewName>Viñetas</tilesViewName>
-	<detailedViewName>Detalle</detailedViewName>
+	<detailedViewName>Detalle Animado</detailedViewName>
     <basicGridName>Rejilla GRID</basicGridName>
     <carouselViewName>Carrousel</carouselViewName>
     <atardecer>Atardecer</atardecer>
@@ -208,6 +214,7 @@ originally based on: "simple" by nils bonenberger
     <include name="mini random image">./art/systemsbk/smallscreen.xml</include>
     <include name="mini random box">./art/systemsbk/smallbox.xml</include>
     <include name="mini random video">./art/systemsbk/smallvideo.xml</include>
+	<include name="sistemas mini video">./art/systemsbk/sistemas-mini-video.xml</include>
   </subset>
 
   <!-- Fix for controller image size -->
@@ -294,12 +301,22 @@ originally based on: "simple" by nils bonenberger
   </view>
   <view name="basic">
     <image name="background" extra="true">
-      <tile>true</tile>
+      <tile>false</tile>
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 1</size>
-      <path>${backgroundImage_B}</path>
+	  <color>000000</color>
+<!--       <path>${bgGamelistImage}${system.name}.jpg</path>
+	  <path>${bgGamelistImage}${system.name}.png</path> -->
     </image>
+	<video name="bg_videoanimado" extra="true">
+      <pos>0 0</pos>
+      <size>1 0.933</size>
+      <origin>0 0</origin>
+      <delay>0.0</delay>
+	  <path>${bganimadoBASICO}</path>
+	  <zIndex>15</zIndex>
+    </video>
     <textlist name="gamelist">
       <selectorColor>${ColordelSelectorMenu}</selectorColor>
       <selectedColor>${ColorSeleccionMenu}</selectedColor>
@@ -317,57 +334,91 @@ originally based on: "simple" by nils bonenberger
   </view>
   <view name="detailed">
     <video name="md_video">
-      <pos>0.763 0.400</pos>
-      <maxSize>0.453 0.436</maxSize>
+      <pos>0.741 0.585</pos>
+      <size>0.282 0.384</size>
+	  <maxSize>0.283 0.385</maxSize>
       <origin>0.5 0.5</origin>
-      <delay>0.5</delay>
+      <delay>0.7</delay>
+	  <effect>none</effect>
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
-      <loops>0</loops>
+      <loops>2</loops>
+	  <zIndex>25</zIndex>
     </video>
-    <image name="background">
-      <tile>true</tile>
+	
+	<video name="bg_videoanimado" extra="true">
       <pos>0 0</pos>
+      <size>1 0.933</size>
+      <origin>0 0</origin>
+      <delay>0.0</delay>
+	  <path>${bganimado}</path>
+      <!-- <loops>25</loops> -->
+	  <zIndex>15</zIndex>
+    </video>
+	
+    <image name="background">
+      <tile>false</tile>
+      <pos>2 2</pos>
       <origin>0 0</origin>
       <size>1 1</size>
-      <path>${backgroundImage}</path>
+	  <color>000000</color>
+<!-- 	  <path>${bgVistaBasica}${system.name}.jpg</path>
+	  <path>${bgVistaBasica}${system.name}.png</path> -->
+    </image>
+	<image name="borders" extra="true">
+      <tile>false</tile>
+      <pos>0.915 0.562</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.815 0.775</size>
+	  <path>${extraBorders}${system.name}.png</path>
+	  <zIndex>90</zIndex>
+    </image>
+	<image name="bg_borders" extra="true">
+      <tile>false</tile>
+      <pos>0.865 0.595</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.635 0.638</size>
+	  <path>./art/extraborders/cubre_fondo.png</path>
+	  <zIndex>22</zIndex>
     </image>
     <text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_releasedate">
-      <color>969696</color>
+      <color>000000</color>
       <forceUppercase>0</forceUppercase>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.023</fontSize>
+	  <zIndex>92</zIndex>
     </text>
     <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
       <pos>1 1</pos>
     </text>
     <datetime name="md_lastplayed, md_releasedate">
-      <color>969696</color>
+      <color>000000</color>
       <forceUppercase>0</forceUppercase>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.023</fontSize>
+	  <zIndex>92</zIndex>
     </datetime>
     <datetime name="md_lastplayed">
       <pos>1 1</pos>
     </datetime>
     <datetime name="md_releasedate">
-      <pos>0.53 0.63</pos>
+      <pos>0.53 0.83</pos>
       <size>0 0.033</size>
     </datetime>
     <text name="md_genre">
-      <pos>0.53 0.66</pos>
+      <pos>0.53 0.86</pos>
       <size>0 0.033</size>
     </text>
     <text name="md_developer">
-      <pos>0.53 0.69</pos>
+      <pos>0.53 0.89</pos>
       <size>0 0.033</size>
     </text>
     <text name="md_lbl_players, md_players">
-      <pos>0.91 0.63</pos>
+      <pos>0.91 0.845</pos>
       <size>0.09 0</size>
     </text>
     <text name="md_players">
-      <pos>0.98 0.63</pos>
+      <pos>0.985 0.845</pos>
       <size>0.02 0</size>
     </text>
     <text name="md_description">
@@ -376,7 +427,8 @@ originally based on: "simple" by nils bonenberger
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.023</fontSize>
       <size>0.467 0.16</size>
-      <pos>0.530 0.746</pos>
+      <pos>2 2</pos>
+	  <zIndex>92</zIndex>
     </text>
     <textlist name="gamelist">
       <selectorColor>${ColordelSelectorMenu}</selectorColor>
@@ -414,6 +466,16 @@ originally based on: "simple" by nils bonenberger
       <color>969696</color>
     </image>
   </view>
+  <view name="grid">
+  <!--  TOP ANIMADO -->
+	<video name="top_bganimado" extra="true">
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 0.16</size>
+      <path>${headeranimado}</path>
+	  <zIndex>18</zIndex>
+    </video> 
+  </view>
   <view name="basic, detailed, grid">
     <image name="bottom" extra="true">
       <pos>0 1</pos>
@@ -421,7 +483,7 @@ originally based on: "simple" by nils bonenberger
       <size>1 0.065</size>
       <path>./art/bottom.png</path>      
       <color>${bottomBarColor}</color>
-      <zIndex>13</zIndex>
+      <zIndex>20</zIndex>
     </image>
     <image name="top-shadow" extra="true">
       <path>./art/shadow.png</path>
@@ -437,6 +499,7 @@ originally based on: "simple" by nils bonenberger
       <size>1 0.16</size>
       <path>./art/top.png</path>
       <color>${baseColor}</color>
+	  <zIndex>20</zIndex>
     </image>
     <text name="logoText">
       <pos>0.02 0.02</pos>

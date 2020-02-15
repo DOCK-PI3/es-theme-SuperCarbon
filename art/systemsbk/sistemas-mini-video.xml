@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <video name="videobox" extra="true">
+      <path>./art/sitemasvideos/${system.name}.mp4</path>
+      <delay>0.20</delay>
+	  <size>0.32 0.32</size>
+      <color>FFFFFFFF</color>
+      <effect>none</effect>
+      <roundCorners>0.15</roundCorners>
+      <visible>true</visible>      
+    </video>
+
+    <image name="ControllerOverlay" extra="true">
+      <visible>false</visible>
+    </image>
+  </view>
+</theme>

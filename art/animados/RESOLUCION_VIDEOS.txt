@@ -1,0 +1,5 @@
+RESOLUCION OPTIMA: 1280x720
+
+info adicional: 
+a 1920x1080 se para el video de fondo cuando hay video scrapeado de juego reproduciendose, 
+cuando termine el video del se empieza a reproducir el fondo dnuevo.

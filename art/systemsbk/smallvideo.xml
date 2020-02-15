@@ -5,9 +5,10 @@
     <video name="videobox" extra="true">
       <path>{random}</path>
       <delay>0.20</delay>
+	  <!-- <size>0.32 0.32</size> -->
       <color>FFFFFFFF</color>
       <effect>none</effect>
-      <roundCorners>0.05</roundCorners>
+      <roundCorners>0.15</roundCorners>
       <visible>true</visible>      
     </video>
 
